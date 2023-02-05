@@ -71,7 +71,7 @@ header .profile-image {
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2) rotate(360deg);
 }
 .tag {
   background-color: #e2e2e2;
@@ -83,7 +83,7 @@ header .profile-image:hover {
 } 
 .location {
   background-color: #222;
-  color: yellow;
+  color: white;
 }
 .card {
   margin: 30px;
@@ -204,3 +204,14 @@ a.social:hover {
 
 }
 
+h3 {
+  color: maroon;
+  letter-spacing: .5px;
+}
+
+.card-title {
+  text-align: center;
+  border: solid black 3px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
