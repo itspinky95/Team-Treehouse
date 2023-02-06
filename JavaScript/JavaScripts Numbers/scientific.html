@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Title-->
+    <title>Calculator</title>
+    <!--Meta-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="./index.html" >Home</a>
+        <a href="#top" class="active">Scientific</a>
+        <a href="./percentage.html">Percentage</a>
+        <a href="./about.html">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <main>
+        <!-- Calculator -->
+        <div class="calculator">
+            <div class="num1">
+                <input type="text" id="num1" placeholder="Enter first number">
+            </div>
+            <div class="num2">
+                <input type="text" id="num2" placeholder="Enter second number">
+            </div>
+            <div class="operator">
+                <select id="operator">
+                    <option value="add">+</option>
+                    <option value="subtract">-</option>
+                    <option value="multiply">*</option>
+                    <option value="divide">/</option>
+                </select>
+            </div>
+            <div class="calculate">
+                <button onclick="calculate()">Calculate</button>
+            </div>
+            <div class="result">
+                <p id="result"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Created by: <a href="https://www.itspinky1995.com">Pinky</a></p>
+    </footer>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

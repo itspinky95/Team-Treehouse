@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Title-->
+    <title>Calculator</title>
+    <!--Meta-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="./index.html">Home</a>
+        <a href="./scientific.html">Scientific</a>
+        <a href="#top" class="active">Percentage</a>
+        <a href="./about.html">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <main>
+        <!-- Calculator for percentage -->
+        <div class="calculator">
+            <div class="display">
+                <input type="text" id="display" value="0" disabled>
+            </div>
+            <div class="buttons">
+                <div class="row">
+                    <button class="btn" id="clear">C</button>
+                    <button class="btn" id="backspace">⌫</button>
+                    <button class="btn" id="percent">%</button>
+                    <button class="btn" id="divide">÷</button>
+                </div>
+                <div class="row">
+                    <button class="btn" id="seven">7</button>
+                    <button class="btn" id="eight">8</button>
+                    <button class="btn" id="nine">9</button>
+                    <button class="btn" id="multiply">x</button>
+                </div>
+                <div class="row">
+                    <button class="btn" id="four">4</button>
+                    <button class="btn" id="five">5</button>
+                    <button class="btn" id="six">6</button>
+                    <button class="btn" id="subtract">-</button>
+                </div>
+                <div class="row">
+                    <button class="btn" id="one">1</button>
+                    <button class="btn" id="two">2</button>
+                    <button class="btn" id="three">3</button>
+                    <button class="btn" id="add">+</button>
+                </div>
+                <div class="row">
+                    <button class="btn" id="zero">0</button>
+                    <button class="btn" id="decimal">.</button>
+                    <button class="btn" id="equals">=</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>Created by: <a href="https://www.itspinky1995.com">Pinky</a></p>
+    </footer>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
