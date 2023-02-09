@@ -1,0 +1,14 @@
+prompt user for number
+if input is not a number
+    print "input is not a number"
+    prompt user for new number
+endif 
+set num1 to user_input 
+prompt user for number
+if input is not a number
+    print "input is not a number"
+    prompt user for new number 
+endif
+set num2 to user_input 
+set sum to num1 + num2
+print sum

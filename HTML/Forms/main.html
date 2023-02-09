@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Forms</title>
+</head>
+
+<body>
+  <form action="index.html" method="post">
+    <h1>Shirt Order Form</h1>
+    <label for="color">Shirt Color:</label>
+    <select id="color" name="shirt_color">
+      <option value="red">Red</option>
+      <option value="yellow">Yellow</option>
+      <option value="purple">Purple</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+      <option value="orange">Orange</option>
+    </select>
+    <label for="shirt_size">Shirt Size</label>
+    <br>
+    <label for="small">Small</label>
+    <br>
+    <input required type="radio" name="shirt_size" id="small" value="small">
+    <label for="medium">Medium</label>
+    <br>
+    <input required type="radio" name="shirt_size" id="medium" value="medium">
+
+    <label for="large">Large</label>
+    <br>
+    <input required type="radio" name="shirt_size" id="large" value="large">
+    <br>
+    <label for="xlarge">X-Large</label>
+    <br>
+    <input required type="radio" name="shirt_size" id="xlarge" value="xlarge">
+    <br>
+    <label for="xxlarge">XX-Large</label>
+    <br>
+    <input required type="radio" name="shirt_size" id="xxlarge" value="xxlarge">
+    <br>
+    <label for="shipping">Fast Shipping</label>
+    <input type="checkbox" name="fast_shipping" id="shipping" value="fast_shipping">
+    <br>
+    <label for="newsletter">Subscribe to our newslatter</label>
+    <input type="checkbox" name="newsletter" id="newsletter" value="subscribe">
+    <br>
+    <label for="quantity">Quantity</label>
+    <br>
+    <input required type="number" name="quantity" id="quantity" min="1" max="10">
+    <br>
+    <label for="name">Name</label>
+    <br>
+    <input required type="text" name="name" id="name">
+    <br>
+    <label for="address">Address</label>
+    <br>
+    <input required type="text" name="address" id="address">
+    <br>
+    <label for="city">City</label>
+    <br>
+    <input required type="text" name="city" id="city">
+    <br>
+    <label for="state">State</label>
+    <br>
+    <input required type="text" name="state" id="state">
+    <br>
+    <label for="zip">Zip</label>
+    <br>
+    <input required type="text" name="zip" id="zip">
+    <br>
+    <label for="phone">Phone</label>
+    <br>
+    <input required type="text" name="phone" id="phone">
+    <br>
+    <button type="submit">Place Order</button>
+  </form>
+</body>
+
+</html>

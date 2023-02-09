@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <form action="index.html" method="post">
+        <h1>Sign Up</h1>
+        <feildset>
+            <legend><span class="number">1</span>Your Basic info</legend>
+            <label for="name">Name: </label>
+            <input required type="text" placeholder="Name*" id="name" name="user_name">
+            <label for="mail">Email: </label>
+            <input required type="email" placeholder="Email*" id="mail" name="user_email">
+            <label for="password">Password: </label>
+            <input required type="password" placeholder="Password*" name="user_password" id="password">
+            <label for="">Age: </label>
+            <input required type="radio" name="user_age" id="under_13" value="under_13"><label for="under_13"
+                class="light">Under 13</label>
+            <br>
+            <input required type="radio" name="user_age" id="over_13" value="over_13"><label for="over_13"
+                class="light">13 or older</label>
+        </feildset>
+        <fieldset>
+            <!-- Building a bio and job role -->
+            <legend><span class="number">2</span>Your Bio</legend>
+            <label for="bio">Bio: </label>
+            <textarea name="user_bio" id="bio" cols="30" rows="10" placeholder="Message"></textarea>
+
+            <label for="job">Job role: </label>
+            <select name="job" id="user_job">
+                <optgroup label="Web">
+                    <option value="frontend">Front-end Developer</option>
+                    <option value="backend">Back-end Developer</option>
+                </optgroup>
+                <optgroup label="Mobile">
+                    <option value="android">Android Developer</option>
+                    <option value="ios">iOS Developer</option>
+                </optgroup>
+                <optgroup label="other">
+                    <option value="designer">Designer</option>
+                    <option value="other">Other</option>
+            </select>
+            <!-- building interests -->
+            <label for="interests">Interests: </label>
+            <input type="checkbox" name="user_interests" id="development" value="interests_development">
+            <label for="development" class="light">Development</label>
+            <br>
+            <input type="checkbox" name="user_interests" id="design" value="interests_design">
+            <label for="design" class="light">Design</label>
+            <br>
+            <input type="checkbox" name="user_interests" id="business" value="interests_business">
+            <label for="business" class="light">Business</label>
+            <br>
+            <input type="checkbox" name="user_interests" id="other" value="interests_other">
+            <label for="other" class="light">Other</label>
+
+        </fieldset>
+        <button type="submit">Sign Up</button>
+    </form>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
