@@ -227,3 +227,4 @@ var myFather = Object.create(person, {
 
 console.log(myFather.fullName());
 
+// Path: muiti.js
